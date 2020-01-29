@@ -1,7 +1,9 @@
 <h1 align="center">
-<img alt="Foodfy" src="https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/layouts/assets/logo.png?raw=true" width="100px" />
+ <div>
+  <img alt="Foodfy" src="https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/layouts/assets/logo.png?raw=true" width="100px" />
+ </div>
 
-<img alt="Launchbase" src="https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/bootcamp-launchbase.png" width="250px" />
+ <img alt="Launchbase" src="https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/bootcamp-launchbase.png" width="250px" />
 
 </h1>
 
