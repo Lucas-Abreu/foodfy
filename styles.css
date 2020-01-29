@@ -10,11 +10,16 @@
 
 header
 {
+    margin: 20px 24% 1%;
     display: grid;
     grid-template-columns: 16% 84%;
     padding: 20px 0px;
     font-size: 30px;
-    margin-bottom: 2.7%;
+}
+
+body
+{
+    position: relative;
 }
 
 a
@@ -32,11 +37,9 @@ a
     margin-right: 8.7%;
 }
 
-
-body
+#wrapper
 {
-    max-width: 60%;
-    margin: 20px auto;
+    margin: 0% 24% 1%;
 }
 
 #intro
@@ -50,7 +53,7 @@ body
     height: 325px;
 }
 
-p
+#intro div p
 {
     opacity: 0.7;
     padding: 0% 14% 2px;
@@ -59,10 +62,10 @@ p
     line-height: 30px;
 }
 
-.strong
+#intro div p.strong
 {
     opacity: 1;
-    padding: 15% 14% 2px;
+    padding: 20% 14% 2px;
     font-weight: bold;
     font-size: 35px;
     line-height: 45px;
@@ -70,7 +73,7 @@ p
 
 #intro img
 {
-    padding: 4.1% 0% 0% 35%;
+    padding: 5% 0% 0% 35%;
 }
 
 .access
@@ -89,10 +92,38 @@ footer
 {
     opacity: 0.7;
     text-align: center;
-    padding: 2% 0px;
+    padding: 1% 0px;
     width: 100%;
-    left: 0;
-    bottom: 0;
-    position: fixed;
+    left: 0px;
+    position: absolute;
     background: #EEEEEE;
+}
+
+.cards
+{
+    margin: 0% auto 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.card img
+{
+    max-width: 300px;
+    border-radius: 15px;
+    margin-bottom: 5%;
+}
+
+.card-title
+{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.card-author
+{
+    font-size: 14px;
+    opacity: 0.5;
 }
