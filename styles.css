@@ -65,7 +65,7 @@ a
 #intro div p.strong
 {
     opacity: 1;
-    padding: 20% 14% 2px;
+    padding: 19% 14% 2px;
     font-weight: bold;
     font-size: 35px;
     line-height: 45px;
@@ -74,18 +74,26 @@ a
 #intro img
 {
     padding: 5% 0% 0% 35%;
+    margin-bottom: 1%;
 }
 
 .access
 {
     font-weight: bold;
-    margin: 5% 0px 2% !important; 
+    margin: 3% 0px 3% !important; 
     opacity: 1;
     padding: 0px;
-    margin: 0px;
     font-size: 25px;
     color: #000000;
     line-height: 35px;
+}
+
+.about
+{
+    opacity: 0.6;
+    margin: 0% 0px 2% !important; 
+    font-size: 18px;
+    line-height: 28px;
 }
 
 footer
