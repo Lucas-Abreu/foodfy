@@ -12,10 +12,12 @@ Simples website de receitas, criado em virtude do segundo desafio do Bootcamp La
 
 -----
 ### Sobre o projeto
-O Website mostra uma lista de cards, cada um representando uma receita diferente que, quando clicados, abrem uma janela pop-up com informações sobre a receita. Existe também a idéia de múltiplas páginas.
+O Website mostra uma lista de cards, cada um representando uma receita diferente que, quando clicados, abrem um link com informações sobre a receita. Existe também a idéia de múltiplas páginas.
 
 Para a conclusão do desafio, foi utilizado:
  - Javascript Puro;
- - HTML Puro;
+ - HTML;
  - CSS Puro;
+ - Nunjucks;
+ - Express
 -----
