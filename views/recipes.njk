@@ -2,19 +2,6 @@
 
 {% block content %}
 
-        
-<div id="intro">
-    <div>
-        <p class="strong">As melhores receitas</p>
-        <p>Aprenda a construir os melhores pratos com receitas
-            criadas por profissionais do mundo inteiro.
-        </p>
-    </div>
-    <div id="chef-container">
-        <img src="/assets/chef.png">
-    </div>
-</div>
-
 <section class="cards">
 {% for recipe in recipes %}
         <div class="card">
@@ -24,7 +11,6 @@
         </div>
 {% endfor %}
 </section>
-
 
 <script src="/scripts.js"></script>
 
