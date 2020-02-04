@@ -1,5 +1,5 @@
 <h1 align="center">
- <img alt="Launchbase" src="https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/bootcamp-launchbase.png" width="250px" />
+ <img alt="Launchbase" src="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/tree/master/desafios" width="350px" />
  <div>
   <br>
   <img alt="Foodfy" src="https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/layouts/assets/logo.png?raw=true" width="100px" />
