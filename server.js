@@ -1,11 +1,15 @@
 const express = require('express')
 const nunjucks = require('nunjucks')
+const methodOverride = require('method-override')
 
-const recipes = require('./data.js')
+const routes = require('./routes')
 
 const server = express()
 
+server.use(methodOverride('_method'))
+server.use(express.urlencoded({ extended: true }))
 server.use(express.static('public'))
+server.use(routes)
 
 server.set('view engine', 'njk')
 
@@ -13,28 +17,6 @@ nunjucks.configure('views', {
     express: server,
     noCache: true,
     autoescape: false
-})
-
-server.get('/', function(req, res)
-{
-    res.render('home', {recipes})
-})
-
-server.get('/about', function(req, res)
-{
-    res.render('about')
-})
-
-server.get('/recipes', function(req, res)
-{
-    res.render('recipes', {recipes})
-})
-
-server.get('/recipes/:index', function(req, res)
-{
-    const recipeIndex = req.params.index;
-    
-    res.render('recipe', {recipe: recipes[recipeIndex]})
 })
 
 server.listen(5000, function()
