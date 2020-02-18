@@ -1,0 +1,26 @@
+{% extends 'admin_layout.njk' %}
+
+{% block content %}
+
+<div class="admin-index">
+    <p class="section-title">Gerenciar receitas</p>
+    <a href="/admin/recipes/create">Criar Receita</a>
+</div>
+
+<section class="cards cards-admin">
+{% for recipe in data %}
+        <div class="card card-admin">
+            <img src="{{recipe.image}}">
+            <div>
+                <p class="card-title">{{recipe.title}}</p>
+                <p class="card-title card-author">{{recipe.author}}</p>
+                <a href="">Visualizar</a>
+            </div>
+        </div>
+{% endfor %}
+</section>
+
+
+<script src="/scripts.js"></script>
+
+{% endblock content %}

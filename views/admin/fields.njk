@@ -1,0 +1,42 @@
+<div class="item">
+    <p>Imagem da receita</p>
+    <input
+        type="url"
+        name="image_url"
+        placeholder="http://">
+</div>
+
+<div class="item">
+    <p>Ingredientes</p>
+    <div id="ingredients">
+        <div class="ingredient">
+            <input
+                type="text"
+                name="ingredients[]"
+                value="" 
+                placeholder="Digite um ingrediente"/>
+        </div>
+    </div>
+    <button type="button" class="add-ingredient">Adicionar novo ingrediente</button>
+</div>
+
+<div class="item">
+    <p>Passos</p>
+    <div id="steps">
+    <div class="step">
+        <input
+            type="text"
+            name="steps[]"
+            value="" 
+            placeholder="Digite um passo"/>
+    </div>
+    </div>
+    <button type="button" class="add-step">Adicionar novo passo</button>
+</div>
+
+<div class="item">
+    <p>Informacoes adicionais</p>
+    <input
+        type="text"
+        name="info">
+</div>

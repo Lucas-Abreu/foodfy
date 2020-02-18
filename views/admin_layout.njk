@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Foodfy</title>
+        <link rel="icon" href="https://img.icons8.com/dusk/344/food-cart.png" type="image/x-icon"/>
+        <link rel="stylesheet" href="/style.css">
+
+        {% block head %}
+        {% endblock head %}
+    </head>
+    <body>
+
+        <header class="admin-header">
+            <a id="home" href="/admin"><img src="/assets/logo_light.png"></a>
+        </header>
+
+        <div id="wrapper">
+            {% block content %}
+            {% endblock content %}
+        </div>
+
+        <footer>Todos os direitos reservados, receitas Foodfy.</footer>
+
+    </body>
+</html>
