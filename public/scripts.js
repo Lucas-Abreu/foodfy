@@ -23,12 +23,13 @@ document.querySelector('.close-modal').addEventListener('click', function()
 
 // Adiciona o link das Receitas
 const recipes = document.querySelectorAll('.card')
+const recipes_id = document.querySelectorAll('.card input')
 
 for (let id = 0; id < recipes.length; id++)
 {
     recipes[id].addEventListener('click', function()
     {
-        window.location.href = `/recipes/${id}`
+        window.location.href = `/recipes/${recipes_id[id].value}`
     })
 }
 

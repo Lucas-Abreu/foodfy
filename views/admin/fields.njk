@@ -1,21 +1,53 @@
 <div class="item">
+    <p>Nome da receita</p>
+    <input
+        type="text"
+        name="title"
+        placeholder="Digite o nome da receita"
+        value="{{recipe.title}}">
+</div>
+
+<div class="item">
+    <p>Autor da receita</p>
+    <input
+        type="text"
+        name="author"
+        placeholder="Digite o nome do autor da receita"
+        value="{{recipe.author}}">
+</div>
+
+<div class="item">
     <p>Imagem da receita</p>
     <input
         type="url"
         name="image_url"
-        placeholder="http://">
+        placeholder="http://"
+        value="{{recipe.image_url}}">
 </div>
 
 <div class="item">
     <p>Ingredientes</p>
     <div id="ingredients">
+        {% if recipe.ingredients == null %}
         <div class="ingredient">
             <input
                 type="text"
                 name="ingredients[]"
-                value="" 
+                value="{{recipe.ingredients}}" 
                 placeholder="Digite um ingrediente"/>
         </div>
+        {% endif %}
+        {% if recipe.ingredients != '' %}
+            {% for ingredient in recipe.ingredients %}
+            <div class="ingredient">
+                <input
+                    type="text"
+                    name="ingredients[]"
+                    value="{{ingredient}}" 
+                    placeholder="Digite um ingrediente"/>
+            </div>
+            {% endfor %}
+        {% endif %}
     </div>
     <button type="button" class="add-ingredient">Adicionar novo ingrediente</button>
 </div>
@@ -23,13 +55,26 @@
 <div class="item">
     <p>Passos</p>
     <div id="steps">
+    {% if recipe.steps == null %}
     <div class="step">
         <input
             type="text"
             name="steps[]"
-            value="" 
+            value="{{recipe.steps}}" 
             placeholder="Digite um passo"/>
     </div>
+    {% endif %}
+    {% if recipe.steps != '' %}
+            {% for step in recipe.steps %}
+            <div class="step">
+                <input
+                    type="text"
+                    name="steps[]"
+                    value="{{step}}" 
+                    placeholder="Digite um stepe"/>
+            </div>
+            {% endfor %}
+    {% endif %}
     </div>
     <button type="button" class="add-step">Adicionar novo passo</button>
 </div>
@@ -38,5 +83,6 @@
     <p>Informacoes adicionais</p>
     <input
         type="text"
-        name="info">
+        name="info"
+        value="{{recipe.info}}">
 </div>

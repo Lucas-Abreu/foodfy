@@ -2,7 +2,7 @@
 
 {% block content %}
     <div id="recipe__image-container">
-        <img src="{{recipe.image}}">
+        <img src="{{recipe.image_url}}">
     </div>
     <div id="recipe__info-container">
         <p class="recipe-title">{{recipe.title}}</p>
@@ -26,8 +26,8 @@
     </div>
 
     <ul class="preparation">
-        {% for prep in recipe.preparation %}
-            <li>{{prep}}</li>
+        {% for step in recipe.steps %}
+            <li>{{step}}</li>
         {% endfor %}
     </ul>
 
@@ -37,7 +37,7 @@
     </div>
 
     <ul class="information">
-        <li>{{recipe.information}}</li>
+        <li>{{recipe.info}}</li>
     </ul>
 
     <script src="/scripts.js"></script>

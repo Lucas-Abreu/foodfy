@@ -8,15 +8,15 @@
 </div>
 
 <section class="cards cards-admin">
-{% for recipe in data %}
-        <div class="card card-admin">
-            <img src="{{recipe.image}}">
-            <div>
-                <p class="card-title">{{recipe.title}}</p>
-                <p class="card-title card-author">{{recipe.author}}</p>
-                <a href="">Visualizar</a>
-            </div>
+{% for recipe in recipes %}
+    <div class="card card-admin">
+        <img src="{{recipe.image_url}}">
+        <div>
+            <p class="card-title">{{recipe.title}}</p>
+            <p class="card-title card-author">por {{recipe.author}}</p>
+            <a href="/admin/recipes/{{recipe.id}}">Visualizar</a>
         </div>
+    </div>
 {% endfor %}
 </section>
 

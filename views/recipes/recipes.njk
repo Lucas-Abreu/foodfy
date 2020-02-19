@@ -5,7 +5,8 @@
 <section class="cards">
 {% for recipe in recipes %}
         <div class="card">
-            <img src="{{recipe.image}}">
+            <input type="hidden" name="id" value='{{recipe.id}}'>
+            <img src="{{recipe.image_url}}">
             <p class="card-title">{{recipe.title}}</p>
             <p class="card-title card-author">{{recipe.author}}</p>
         </div>
