@@ -10,7 +10,7 @@
 
 Simples website de receitas, criado em virtude do segundo desafio do Bootcamp LaunchBase da Rocketseat. O repositório que contém o enunciado do desafio pode ser encontrado [aqui](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-foodfy.md).
 
-Outraos desafios também foram completados, os repositórios contendo os enunciados dos desafios podem ser encontrados em:
+Outraos desafios também foram completados, cuja solução foi mesclada com este mesmo repositório, os repositórios contendo os enunciados dos desafios podem ser encontrados em:
 - [Refatorando Foodfy](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-refatorando-foodfy.md).
 - [Administração do Foodfy](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-refatorando-foodfy.md).
 
