@@ -16,7 +16,7 @@ Outraos desafios também foram completados, cuja solução foi mesclada com este
 
 -----
 ### Sobre o projeto
-O Website mostra uma lista de cards, cada um representando uma receita diferente que, quando clicados, abrem um link com informações sobre a receita. Existe também a idéia de múltiplas páginas.
+O Website mostra uma lista de cards, cada um representando uma receita diferente que, quando clicados, abrem um link com informações sobre a receita. Existe também a idéia de múltiplas páginas. Além disso, existe uma página de administração, por onde é possível adicionar, editar e remover cada uma das receitas.
 
 Para a conclusão do desafio, foi utilizado:
  - Javascript Puro;
